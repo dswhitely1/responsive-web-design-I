@@ -183,6 +183,10 @@ header {
 	padding-top: 30px;
 	margin-bottom: 70px;
 }
+.services-page header {
+	padding-top: 31px;
+	margin-bottom: 20px;
+}
 @media (max-width: 800px) {
 	header {
 		flex-direction: column;
@@ -322,6 +326,11 @@ header nav a:hover {
 	justify-content: space-between;
 	align-items: flex-start;
 }
+.services-page .main-content .top-content {
+	flex-direction: column;
+	margin: 0 1.5%;
+	width: 97%;
+}
 @media (max-width: 800px) {
 	.main-content .top-content .text-content {
 		width: 47%;
@@ -342,20 +351,82 @@ header nav a:hover {
 	font-size: 16px;
 }
 
+.main-content h2 {
+	font-size: 26px;
+}
+
 .main-content p {
 	line-height: 18px;
 }
-
-.main-content img {
+.services-page .main-content p {
+	line-height: 20px;
+}
+.main-content .middle-img {
 	width: 97%;
 	margin-bottom: 27px;
 	margin-left: 1.5%;
 	margin-right: 1.5%;
 }
 
+.services-page .main-content .top-content img {
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 32px;
+}
+
+.services-page .main-content .top-content p {
+	margin-bottom: 9px;
+}
+
 @media (max-width: 500px) {
 	.main-content img {
 		margin-bottom: 35px;
+	}
+}
+.services-page .main-content .top-content-line-break {
+	margin: 0;
+	margin-bottom: 40px;
+}
+.services-page .main-content .middle-content {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.services-page .main-content .middle-content .text-content {
+	border: 1px solid black;
+	background-color: #f5f5f5;
+	width: 48%;
+	height: 27%;
+	padding: 22px;
+	margin-bottom: 40px;
+}
+
+.services-page .main-content .middle-content .text-content button {
+	padding: 9px 40px;
+	margin: 23px 0 0 -3px;
+	border-radius: 5px;
+	font-size: 12px;
+}
+
+.services-page .main-content .middle-content-line-break {
+	margin: 0;
+	margin-bottom: 42px;
+}
+
+@media (max-width: 800px) {
+	.services-page .main-content .middle-content {
+		width: 97%;
+		margin: 0 1.5%;
+	}
+}
+
+@media (max-width: 500px) {
+	.services-page .main-content .middle-content {
+		flex-flow: column wrap;
+	}
+	.services-page .main-content .middle-content .text-content {
+		width: 97%;
 	}
 }
 
@@ -368,11 +439,19 @@ header nav a:hover {
 	.main-content .bottom-content {
 		justify-content: space-around;
 	}
+	.services-page .main-content .bottom-content {
+		justify-content: space-between;
+	}
 }
 @media (max-width: 500px) {
 	.main-content .bottom-content {
 		display: block;
 		margin-bottom: 35px;
+	}
+	.services-page .main-content .bottom-content {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
 	}
 }
 
@@ -381,9 +460,29 @@ header nav a:hover {
 	margin-right: 20px;
 }
 
+.services-page .main-content .bottom-content .text-content {
+	width: 48%;
+}
+.services-page .main-content .bottom-content ul {
+	list-style: square inside;
+}
+
+.services-page .main-content .bottom-content li {
+	margin: 14px 0;
+}
+.services-page .main-content .bottom-content p {
+	margin-bottom: 30px;
+}
+.services-page .main-content .bottom-content h4 {
+	margin-bottom: 16px;
+}
+.services-page .main-content .bottom-content img {
+	width: 48%;
+}
 @media (max-width: 800px) {
 	.main-content .bottom-content .text-content {
 		width: 28%;
+		height: 30%;
 	}
 }
 @media (max-width: 500px) {
@@ -392,8 +491,14 @@ header nav a:hover {
 		margin: 0 1.5%;
 		margin-bottom: 65px;
 	}
+	.services-page .main-content .bottom-content .text-content {
+		width: 97%;
+	}
 	.main-content .bottom-content .text-content.last-child {
 		margin-bottom: 0;
+	}
+	.services-page .main-content .bottom-content img {
+		width: 97%;
 	}
 }
 
