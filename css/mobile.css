@@ -1,0 +1,331 @@
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+button {
+	background-color: white;
+	border: 1px solid black;
+}
+button:hover {
+	background-color: black;
+	color: white;
+}
+a:hover {
+	text-decoration: underline;
+}
+.container {
+	width: 500px;
+	margin: 0 auto;
+}
+@media (min-width: 500px) {
+	.container {
+		width: 800px;
+	}
+}
+
+@media (min-width: 800px) {
+}
+
+header {
+	width: 97%;
+	margin: 0 1.5%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 20px;
+	margin-bottom: 50px;
+}
+
+header nav {
+	order: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+header img {
+	margin-bottom: 21px;
+}
+
+header nav a {
+	color: #bcbcbc;
+	font-size: 20px;
+	text-align: center;
+	width: 100%;
+	border-bottom: 1px solid #bcbcbc;
+	padding: 20px;
+}
+
+@media (min-width: 500px) {
+	header {
+		margin-bottom: 74px;
+		padding-top: 30px;
+	}
+	header nav {
+		justify-content: space-around;
+		flex-direction: row;
+		font-size: 16px;
+		width: 100%;
+	}
+	header nav a {
+		border: none;
+		font-size: 16px;
+		padding: 0;
+		margin-right: 3%;
+	}
+	header img {
+		margin-bottom: 40px;
+	}
+}
+
+.cta {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 74px;
+}
+.cta img {
+	display: none;
+}
+
+.cta .cta-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-size: 72px;
+	text-align: center;
+	line-height: 71px;
+}
+
+.cta h1 {
+	margin-bottom: 0px;
+}
+
+.cta .cta-text button {
+	margin-top: 29px;
+	padding: 6px 40px;
+	font-size: 17px;
+}
+
+@media (min-width: 500px) {
+	.cta .cta-text {
+		margin-left: 2%;
+	}
+	.cta .cta-text button {
+		margin-top: 25px;
+		padding: 6px 40px;
+	}
+}
+.main-content h4 {
+	font-size: 16px;
+}
+
+.main-content p {
+	line-height: 18px;
+}
+.main-content {
+	margin: 0 20px;
+}
+
+.main-content hr {
+	margin-bottom: 58px;
+}
+.main-content .top-content {
+	display: block;
+	margin-bottom: 30px;
+}
+
+.main-content .top-content .text-content {
+	margin-bottom: 48px;
+}
+
+.main-content .middle-img {
+	width: 100%;
+	margin-bottom: 27px;
+	margin-top: 3px;
+}
+
+.main-content .bottom-content {
+	display: block;
+	margin-bottom: 38px;
+}
+
+.main-content .bottom-content .text-content {
+	margin-bottom: 65px;
+}
+
+.main-content .bottom-content .text-content.last-child {
+	margin-bottom: 0;
+}
+
+.contact {
+	margin: 0 20px;
+	margin-bottom: 39px;
+	line-height: 17px;
+}
+
+.contact hr {
+	margin-bottom: 32px;
+}
+
+.contact p {
+	margin-bottom: 14px;
+}
+
+footer {
+	text-align: center;
+	font-size: 16px;
+}
