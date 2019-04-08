@@ -1,0 +1,60 @@
+header {
+	width: 100%;
+	font-size: @fontSize;
+	.flex-layout(center);
+	flex-wrap: wrap;
+	@media @tablet {
+		justify-content: flex-start;
+	}
+	@media @desktop {
+		flex-wrap: nowrap;
+	}
+	nav {
+		margin: 0;
+		flex-direction: column;
+		width: 100%;
+		.flex-layout(space-between);
+		@media @tablet {
+			flex-direction: row;
+			margin: 38px 3%;
+		}
+		@media @desktop {
+			margin: 38px 1% 0;
+		}
+		&:first-child {
+			border-top: 1px solid @borderColor;
+			@media @tablet {
+				border: none;
+			}
+		}
+		a {
+			width: 100%;
+			display: block;
+			text-align: center;
+			padding: 20px 0;
+			font-size: @fontSize + .4;
+			border-bottom: 1px solid @borderColor;
+			@media @tablet {
+				display: inherit;
+				text-align: inherit;
+				width: inherit;
+				padding: 0;
+				font-size: @fontSize;
+				border: none;
+			}
+		}
+	}
+	.logo {
+		margin: 20px 0;
+		order: -1;
+		display: block;
+		align-self: flex-end;
+		@media @tablet {
+			margin: 30px auto 0;
+		}
+		@media @desktop {
+			order: 1;
+			margin: 28px 0 0 9%;
+		}
+	}
+}

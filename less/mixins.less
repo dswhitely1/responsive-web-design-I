@@ -1,0 +1,13 @@
+.flex-layout(@justify) {
+	display: flex;
+	justify-content: @justify;
+}
+
+.content() {
+	.flex-layout(space-around);
+	flex-wrap: wrap;
+	@media @tablet {
+		flex-wrap: nowrap;
+		height: inherit;
+	}
+}
