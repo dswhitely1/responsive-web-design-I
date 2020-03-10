@@ -1,0 +1,30 @@
+.main-content {
+	padding-top: 55px;
+	font-size: @fontSize - 0.2;
+	margin: 75px 2% 35px;
+	border-top: 2px solid @borderColor;
+	border-bottom: 2px solid @borderColor;
+	padding: 35px 0;
+	line-height: 1.3;
+	@media @desktop {
+		font-size: @fontSize;
+		margin: 75px 0 35px 0;
+	}
+	.top-content {
+		.content;
+		height: 300px;
+	}
+	.text-content {
+		margin: 0 1%;
+	}
+	.middle-img {
+		width: 100%;
+		margin: 10px auto 25px;
+		display: block;
+	}
+	.bottom-content {
+		.content;
+		align-content: space-between;
+		height: 440px;
+	}
+}

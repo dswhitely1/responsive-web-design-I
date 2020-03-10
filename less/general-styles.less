@@ -1,0 +1,51 @@
+// Setting Global Styles for website
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+html,
+body {
+	height: 100%;
+	font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+	font-size: @fontSize;
+}
+
+p {
+	font-size: 1.6rem;
+}
+button {
+	background-color: @btnBGColor;
+	color: @btnColor;
+	cursor: pointer;
+	&:hover {
+		background-color: @btnColor;
+		color: @btnBGColor;
+	}
+}
+a {
+	color: @navColor;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+.container {
+	width: 100%;
+	margin: auto;
+	@media @desktop {
+		max-width: 880px;
+	}
+}
